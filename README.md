@@ -1,56 +1,34 @@
-![A Little World With Us — Building Ideas Into Reality](./assets/profile-banner.svg)
-
 <p align="center">
-  <strong>A Little World With Us</strong><br/>
-  A shared digital space for memories, communication, everyday care, planning, and learning.
+  <img src="https://raw.githubusercontent.com/alittleworldwithus/alittleworldwithus/main/assets/banner.svg" alt="A Little World With Us — A Shared Digital Space" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://a-little-world-with-us.vercel.app">Live Website</a>
-  ·
-  <a href="https://github.com/alittleworldwithus/A-little-world-with-us">Main Repository</a>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/React%20Native-61DAFB?style=flat-square&logo=reactnative&logoColor=white" alt="React Native" />
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/AI-7C3AED?style=flat-square&logo=ai&logoColor=white" alt="AI" />
+  
 </p>
 
 ---
 
-## Project
+<p align="center">
+  <strong>A private platform for shared memories, real-time communication, wellness tracking, daily planning, and AI-powered experiences.</strong>
+</p>
 
-**A Little World With Us** is a couples-focused digital platform bringing meaningful parts of everyday life into one connected space. It brings together shared memories, private conversations, wellness, planning, learning, and AI-assisted experiences across web and mobile.
-
-## Main areas
-
-- **Vault & Memories** — keep personal moments and shared memories together
-- **Private Chat** — real-time conversations and media sharing
-- **Care & Daily Wellness** — everyday wellness logs and shared insights
-- **Shared Planning** — calendars, milestones, travel plans, and expenses
-- **Korean Learning** — interactive language-learning experiences
-- **AI Companion** — AI-assisted ideas, check-ins, and memory features
-- **Telegram Integration** — bot-based notifications and project interactions
-
-*Features and integrations are under active development; availability and production readiness may vary.*
-
-## Technology
-
-| Area | Stack |
-| --- | --- |
-| Web | Next.js, React, TypeScript, Tailwind CSS |
-| Mobile | Expo, React Native |
-| Backend | Supabase, PostgreSQL, Auth, Row Level Security, Realtime, Edge Functions |
-| Jobs & cache | Upstash Redis, Supabase Cron |
-| Media | Cloudinary, Backblaze B2 |
-| Integrations | Google Drive, Telegram, email, push notifications, AI providers |
-
-## Explore
-
-- **Website:** https://a-little-world-with-us.vercel.app
-- **Source code & documentation:** https://github.com/alittleworldwithus/A-little-world-with-us
-
-The main repository includes the web platform, mobile application, and supporting backend and integration code. Visit it for setup instructions, architecture notes, development checks, security guidance, and current implementation details.
-
-## Feedback & collaboration
-
-For questions, bug reports, or suggestions, please open an issue in the [main repository](https://github.com/alittleworldwithus/A-little-world-with-us).
+<p align="center">
+  memories · chat · wellness · planning · Korean learning
+</p>
 
 ---
 
-<p align="center"><i>A little world, built together.</i></p>
+<p align="center">
+  <a href="https://a-little-world-with-us.vercel.app">
+    <img src="https://img.shields.io/badge/Website-Live-E11D48?style=for-the-badge" alt="Website" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/alittleworldwithus/A-little-world-with-us">
+    <img src="https://img.shields.io/badge/Repository-GitHub-181717?style=for-the-badge&logo=github" alt="Repository" />
+  </a>
+</p>
