@@ -1,29 +1,38 @@
-![A Little World With Us](./assets/profile-banner.svg)
+![TW — Building Ideas Into Reality](./assets/profile-banner.svg)
 
-# A Little World With Us
+<h1 align="center">Hi, I'm Thu Won 👋</h1>
+<h3 align="center">Founder & Developer · Building A Little World With Us</h3>
 
-A private, shared digital space designed to bring everyday life, memories, wellness, and learning together.
+<p align="center">
+  <strong>Building ideas into reality.</strong><br/>
+  I enjoy turning thoughtful ideas into useful digital experiences — from web and mobile products to connected services and automation.
+</p>
 
-**Live website:** [a-little-world-with-us.vercel.app](https://a-little-world-with-us.vercel.app)  
-**Main project repository:** [A-little-world-with-us](https://github.com/alittleworldwithus/A-little-world-with-us)
+<p align="center">
+  <a href="https://a-little-world-with-us.vercel.app">Live Project</a>
+  ·
+  <a href="https://github.com/alittleworldwithus/A-little-world-with-us">Main Repository</a>
+</p>
 
 ---
 
-## About the project
+## About
 
-**A Little World With Us** is a couples-focused platform concept that brings several parts of shared life into one place. The project is being developed across web and mobile experiences, with an emphasis on thoughtful features for private shared use.
+I'm building **A Little World With Us**, a shared digital space designed to bring everyday life, memories, wellness, and learning together.
 
-Areas represented in the project include:
+The project is developed across web and mobile experiences, with a focus on practical features and thoughtful details.
 
-- **Vault & Memories** — a place for shared memories and personal moments
-- **Private Chat** — real-time conversations within the platform
-- **Care & Daily Wellness** — everyday care and wellness tracking
+### What I'm building
+
+- **Vault & Memories** — shared memories and personal moments
+- **Private Chat** — real-time conversations
+- **Care & Daily Wellness** — everyday care and wellness tools
 - **Shared Planning** — calendars, plans, and coordination
 - **Korean Learning** — interactive learning experiences
-- **AI Companion** — AI-assisted experiences for couples
+- **AI Companion** — AI-assisted experiences
 - **Telegram Integration** — bot-based project interaction
 
-Feature availability may vary as development continues.
+*Feature availability may vary while development and testing continue.*
 
 ## Technology
 
@@ -36,26 +45,21 @@ Feature availability may vary as development continues.
 | Media | Cloudinary, Backblaze B2 |
 | Integrations | Google Drive, Telegram, email, push notifications, AI providers |
 
-## Project structure
+## Featured project
 
-The main repository contains the web platform, mobile application, and supporting backend/integration code.
+### A Little World With Us
 
-For implementation details, setup instructions, and the latest project status, please visit the [main repository](https://github.com/alittleworldwithus/A-little-world-with-us).
-
-## Current focus
-
-This is an actively evolving project. Features, integrations, and deployment workflows may change as development and testing progress. The project profile intentionally avoids claiming that every feature or integration is fully released or production-verified.
-
-## Links
+A couples-focused platform concept for shared memories, communication, daily care, planning, and learning.
 
 - **Website:** https://a-little-world-with-us.vercel.app
-- **Main repository:** https://github.com/alittleworldwithus/A-little-world-with-us
-- **Profile repository:** https://github.com/alittleworldwithus/alittleworldwithus
+- **Source code:** https://github.com/alittleworldwithus/A-little-world-with-us
 
-## Contact & collaboration
+The main repository contains the web platform, mobile application, and supporting backend and integration code. For implementation details, setup instructions, and current project status, please visit the source repository.
 
-For project questions, feedback, or technical discussion, please open an issue in the [main project repository](https://github.com/alittleworldwithus/A-little-world-with-us).
+## Connect
+
+For project questions, feedback, or technical discussion, please open an issue in the [main repository](https://github.com/alittleworldwithus/A-little-world-with-us).
 
 ---
 
-*Built around the idea that a little shared world can make everyday moments more meaningful.*
+<p align="center"><i>Creating meaningful experiences, one idea at a time.</i></p>
