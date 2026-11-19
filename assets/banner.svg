@@ -67,7 +67,7 @@
     <circle r="80" fill="url(#logoFill)"/>
     <circle r="68" fill="none" stroke="#FB7185" stroke-width="1.2" opacity=".26"/>
     <text x="0" y="10" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif"
-          font-size=" thirty" font-size="30" font-weight="800" letter-spacing="2">ALW</text>
+          font-size="30" font-weight="800" letter-spacing="2">ALW</text>
     <path d="M-28 30 H28" stroke="#FB7185" stroke-width="1.6" opacity=".62"/>
   </g>
 
