@@ -1,90 +1,135 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
   <title id="title">A Little World With Us</title>
-  <desc id="desc">A refined midnight digital-world banner with a balanced globe emblem, clear project identity, soft feature pills, and five ALW theme colors.</desc>
+  <desc id="desc">A clean premium brand banner with a restrained midnight palette and translucent dashboard cards accented by the five official ALW colors.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#090D20"/><stop offset=".52" stop-color="#17132D"/><stop offset="1" stop-color="#091B2B"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090D1C"/><stop offset=".55" stop-color="#11162B"/><stop offset="1" stop-color="#15132B"/>
     </linearGradient>
-    <radialGradient id="haze" cx="25%" cy="50%" r="65%">
-      <stop offset="0" stop-color="#8050C8" stop-opacity=".22"/><stop offset=".52" stop-color="#00AFCF" stop-opacity=".07"/><stop offset="1" stop-color="#090D20" stop-opacity="0"/>
+    <radialGradient id="ambient" cx="82%" cy="43%" r="65%">
+      <stop offset="0" stop-color="#7554B7" stop-opacity=".24"/><stop offset=".5" stop-color="#263B68" stop-opacity=".12"/><stop offset="1" stop-color="#090D1C" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".105"/><stop offset="1" stop-color="#B8C6F5" stop-opacity=".025"/>
+    </linearGradient>
+    <linearGradient id="glassEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".32"/><stop offset=".55" stop-color="#B8B5E8" stop-opacity=".12"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".06"/>
+    </linearGradient>
+    <linearGradient id="brandline" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ff4081"/><stop offset=".25" stop-color="#a855f7"/><stop offset=".5" stop-color="#00d2ff"/><stop offset=".75" stop-color="#34d399"/><stop offset="1" stop-color="#fbbf24"/>
     </linearGradient>
-    <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7950B5" stop-opacity=".25"/><stop offset=".55" stop-color="#111C38" stop-opacity=".96"/><stop offset="1" stop-color="#00BBD8" stop-opacity=".18"/>
-    </linearGradient>
-    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#8492C5" stroke-width=".7" opacity=".11"/></pattern>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B78AF4"/><stop offset="1" stop-color="#7952C6"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="12"/><feComponentTransfer><feFuncA type="linear" slope=".34"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="microgrid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#AAB6E2" stroke-opacity=".045" stroke-width="1"/></pattern>
   </defs>
 
-  <rect width="1500" height="500" fill="url(#bg)"/>
-  <rect width="1500" height="500" fill="url(#haze)"/>
-  <rect width="1500" height="500" fill="url(#grid)"/>
-  <path d="M0 82H1500M0 418H1500" stroke="#8793BD" stroke-width="1" opacity=".10"/>
-  <path d="M0 22H1500M0 478H1500" stroke="url(#spectrum)" stroke-width="2.2" opacity=".78"/>
+  <rect width="1500" height="500" fill="url(#background)"/>
+  <rect width="1500" height="500" fill="url(#ambient)"/>
+  <rect width="1500" height="500" fill="url(#microgrid)"/>
+  <circle cx="1270" cy="230" r="190" fill="#8061C8" opacity=".09" filter="url(#blur)"/>
+  <path d="M72 72H1428" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <path d="M72 428H1428" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <rect x="72" y="72" width="54" height="3" rx="1.5" fill="url(#brandline)"/>
 
-  <!-- World emblem -->
-  <g transform="translate(215 250)">
-    <circle r="151" fill="#9B63E8" opacity=".075" filter="url(#softGlow)"/>
-    <circle r="130" fill="#0C1229" stroke="url(#spectrum)" stroke-width="2.3"/>
-    <circle r="116" fill="url(#orb)" stroke="#AAB4DC" stroke-opacity=".32" stroke-width="1.2"/>
-    <ellipse rx="82" ry="116" fill="none" stroke="#91A2D7" stroke-width="1.3" opacity=".48"/>
-    <ellipse rx="42" ry="116" fill="none" stroke="#91A2D7" stroke-width="1.1" opacity=".32"/>
-    <ellipse rx="116" ry="42" fill="none" stroke="#91A2D7" stroke-width="1.1" opacity=".38"/>
-    <ellipse rx="116" ry="78" fill="none" stroke="#91A2D7" stroke-width="1.1" opacity=".27"/>
-    <path d="M-111 -28Q0 -80 111 -28M-111 28Q0 80 111 28" fill="none" stroke="url(#spectrum)" stroke-width="1.8" opacity=".58"/>
-    <path d="M-88 0C-50 -58 18 -58 72 -8S88 52 35 67-44 46-66 9" fill="none" stroke="url(#spectrum)" stroke-width="3.5" stroke-linecap="round" filter="url(#softGlow)"/>
-    <g fill="#11172F" stroke-width="2.2"><circle cx="-66" cy="9" r="8" stroke="#ff4081"/><circle cx="72" cy="-8" r="8" stroke="#00d2ff"/><circle cx="35" cy="67" r="8" stroke="#34d399"/></g>
-    <text x="0" y="11" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="3" fill="#FFFFFF">ALW</text>
-    <path d="M-25 29H25" stroke="url(#spectrum)" stroke-width="2.4" stroke-linecap="round"/>
-  </g>
+  <!-- Brand identity -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <g transform="translate(74 118)">
+      <rect width="42" height="42" rx="13" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".17"/>
+      <path d="M10 22C10 15 15 10 22 10C29 10 33 15 33 22C33 29 28 33 21 33" fill="none" stroke="url(#brandline)" stroke-width="2.7" stroke-linecap="round"/>
+      <path d="M15 22H28M21.5 15V29" stroke="#F4F0FF" stroke-opacity=".9" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="31.5" cy="11" r="2.4" fill="#00D2FF"/>
+    </g>
+    <text x="132" y="145" fill="#C8C6DD" font-size="12" font-weight="700" letter-spacing="2.5">A L W  /  DIGITAL COMMUNITY</text>
 
-  <!-- Fine connection lines -->
-  <g fill="none" stroke-width="1.4" opacity=".48">
-    <path d="M333 150L388 112H432" stroke="#A855F7"/><path d="M334 350L390 389H432" stroke="#00D2FF"/>
-    <path d="M90 105L126 132H148" stroke="#FF4081"/><path d="M88 390L126 365H148" stroke="#34D399"/>
-    <path d="M263 73L286 51H330" stroke="#FBBF24"/>
-  </g>
-  <g><circle cx="432" cy="112" r="3.5" fill="#A855F7"/><circle cx="432" cy="389" r="3.5" fill="#00D2FF"/><circle cx="148" cy="132" r="3.5" fill="#FF4081"/><circle cx="148" cy="365" r="3.5" fill="#34D399"/><circle cx="330" cy="51" r="3.5" fill="#FBBF24"/></g>
+    <text x="72" y="239" fill="#FFFFFF" font-size="59" font-weight="760" letter-spacing="-1.8">A Little World</text>
+    <text x="74" y="305" fill="#E5DFF4" font-size="57" font-weight="520" letter-spacing="-.8">With Us<span fill="#A855F7">.</span></text>
+    <rect x="74" y="332" width="76" height="3" rx="1.5" fill="url(#brandline)"/>
+    <text x="74" y="373" fill="#B9C1D6" font-size="18" font-weight="450" letter-spacing=".15">A shared space to connect, create &amp; grow.</text>
 
-  <!-- Project identity -->
-  <g transform="translate(455 126)" font-family="Segoe UI,Roboto,Arial,sans-serif">
-    <rect x="0" y="0" width="270" height="34" rx="17" fill="#211A3A" stroke="#8860C5" stroke-width="1.2"/>
-    <circle cx="18" cy="17" r="4.5" fill="#FF78A6"/>
-    <text x="34" y="22" font-size="11.5" font-weight="700" letter-spacing="2" fill="#E9DDFB">CONNECTED DIGITAL COMMUNITY</text>
-
-    <text x="0" y="108" font-size="64" font-weight="850" letter-spacing=".5" fill="#FFFFFF">A LITTLE WORLD</text>
-    <text x="2" y="174" font-size="58" font-weight="650" letter-spacing="1.8" fill="#DCDDF0">WITH US</text>
-    <rect x="2" y="194" width="620" height="3.5" rx="2" fill="url(#spectrum)" opacity=".88"/>
-    <text x="2" y="235" font-size="21" font-weight="500" letter-spacing=".65" fill="#C2CBE0">A shared space to connect, create &amp; grow together</text>
-
-    <!-- Rebalanced, equal-height feature pills -->
-    <g transform="translate(0 270)" font-size="12.5" font-weight="700" letter-spacing=".55">
-      <g><rect x="0" y="0" width="126" height="38" rx="19" fill="#2A1A2B" stroke="#B94A78" stroke-width="1.1"/><circle cx="17" cy="19" r="4" fill="#FF6D9D"/><text x="75" y="23" fill="#FFE0EA" text-anchor="middle">COMMUNITY</text></g>
-      <g><rect x="137" y="0" width="126" height="38" rx="19" fill="#281E3A" stroke="#8C60C6" stroke-width="1.1"/><circle cx="154" cy="19" r="4" fill="#B77AFB"/><text x="212" y="23" fill="#EDE0FF" text-anchor="middle">CREATIVITY</text></g>
-      <g><rect x="274" y="0" width="120" height="38" rx="19" fill="#142A39" stroke="#258EAA" stroke-width="1.1"/><circle cx="291" cy="19" r="4" fill="#42D9F5"/><text x="339" y="23" fill="#D9F8FF" text-anchor="middle">TECHNOLOGY</text></g>
-      <g><rect x="405" y="0" width="108" height="38" rx="19" fill="#172D2C" stroke="#329C7B" stroke-width="1.1"/><circle cx="422" cy="19" r="4" fill="#55DDAA"/><text x="469" y="23" fill="#D8F9EA" text-anchor="middle">TOGETHER</text></g>
-      <g><rect x="524" y="0" width="116" height="38" rx="19" fill="#30291D" stroke="#B68C36" stroke-width="1.1"/><circle cx="541" cy="19" r="4" fill="#FFD064"/><text x="587" y="23" fill="#FFF1CC" text-anchor="middle">POSSIBILITY</text></g>
+    <g transform="translate(74 397)" font-size="10.5" font-weight="650" letter-spacing="1.2">
+      <circle cx="4" cy="4" r="3.2" fill="#ff4081"/><text x="16" y="8" fill="#D9D6E8">COMMUNITY</text>
+      <circle cx="133" cy="4" r="3.2" fill="#a855f7"/><text x="145" y="8" fill="#D9D6E8">CREATIVITY</text>
+      <circle cx="260" cy="4" r="3.2" fill="#00d2ff"/><text x="272" y="8" fill="#D9D6E8">TECHNOLOGY</text>
+      <circle cx="402" cy="4" r="3.2" fill="#34d399"/><text x="414" y="8" fill="#D9D6E8">TOGETHER</text>
     </g>
   </g>
 
-  <!-- Right constellation, softened and balanced -->
-  <g transform="translate(1240 245)" opacity=".72">
-    <path d="M-66 -104L39 -70L91 10L22 94L-76 55Z M-66 -104L22 94 M39 -70L-76 55 M91 10L-66 -104" fill="none" stroke="#8798C7" stroke-width="1.3" stroke-dasharray="4 8" opacity=".42"/>
-    <circle cx="-66" cy="-104" r="17" fill="#17182F" stroke="#D45A8D" stroke-width="1.8"/>
-    <circle cx="39" cy="-70" r="22" fill="#17182F" stroke="#A879E5" stroke-width="2.2"/>
-    <circle cx="91" cy="10" r="15" fill="#17182F" stroke="#38BBD5" stroke-width="1.8"/>
-    <circle cx="22" cy="94" r="19" fill="#17182F" stroke="#42B88F" stroke-width="2.1"/>
-    <circle cx="-76" cy="55" r="13" fill="#17182F" stroke="#D7AA4B" stroke-width="1.8"/>
-    <circle cx="39" cy="-70" r="4" fill="#B77AFB"/><circle cx="22" cy="94" r="3.5" fill="#55DDAA"/>
-  </g>
+  <!-- Layered glass dashboard composition -->
+  <g filter="url(#shadow)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <!-- Back card -->
+    <g transform="translate(1004 108) rotate(5 174 120)">
+      <rect width="350" height="250" rx="23" fill="url(#glass)" stroke="url(#glassEdge)" stroke-width="1.2"/>
+      <rect x="22" y="22" width="104" height="7" rx="3.5" fill="#DCE3FF" opacity=".2"/>
+      <rect x="22" y="44" width="190" height="5" rx="2.5" fill="#DCE3FF" opacity=".1"/>
+      <g transform="translate(24 88)" fill="none" stroke-linecap="round">
+        <path d="M0 70L48 45L92 57L139 16L188 34L246 0" stroke="#00D2FF" stroke-opacity=".7" stroke-width="2.5"/>
+        <path d="M0 70L48 45L92 57L139 16L188 34L246 0V105H0Z" fill="#00D2FF" fill-opacity=".06" stroke="none"/>
+        <path d="M0 105H246" stroke="#DCE3FF" stroke-opacity=".13"/>
+      </g>
+    </g>
 
-  <!-- Subtle five-color signature -->
-  <g transform="translate(1080 444)">
-    <rect width="285" height="4" rx="2" fill="url(#spectrum)" opacity=".85"/>
-    <g font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="1.15" fill="#AEB9D1">
-      <text x="0" y="22">ROSE</text><text x="66" y="22">VIOLET</text><text x="133" y="22">CYAN</text><text x="198" y="22">MINT</text><text x="255" y="22">GOLD</text>
+    <!-- Main glass panel -->
+    <g transform="translate(835 112)">
+      <rect width="405" height="280" rx="25" fill="url(#glass)" stroke="url(#glassEdge)" stroke-width="1.3"/>
+      <path d="M1 26Q1 1 26 1H379Q404 1 404 26" fill="none" stroke="#FFFFFF" stroke-opacity=".13"/>
+      <g transform="translate(24 22)">
+        <circle cx="6" cy="6" r="4" fill="#ff4081"/>
+        <circle cx="20" cy="6" r="4" fill="#a855f7"/>
+        <circle cx="34" cy="6" r="4" fill="#00d2ff"/>
+        <rect x="274" y="0" width="82" height="17" rx="8.5" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".34"/>
+        <circle cx="286" cy="8.5" r="3" fill="#34d399"/>
+        <text x="297" y="12" font-size="8.5" font-weight="650" letter-spacing=".7" fill="#B9F5DC">ONLINE</text>
+      </g>
+      <path d="M24 58H381" stroke="#FFFFFF" stroke-opacity=".1"/>
+      <text x="25" y="86" font-size="11" font-weight="650" letter-spacing="1.5" fill="#AEB9D4">YOUR WORLD, IN ONE PLACE</text>
+      <text x="25" y="116" font-size="21" font-weight="700" fill="#F5F4FF">Explore together</text>
+      <text x="25" y="137" font-size="10.5" fill="#AEB8D1">Ideas, people and possibilities.</text>
+
+      <!-- Four dashboard tiles -->
+      <g transform="translate(24 158)">
+        <g>
+          <rect width="168" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#ff4081" fill-opacity=".16"/>
+          <circle cx="24.5" cy="24.5" r="5" fill="none" stroke="#FF79A7" stroke-width="1.5"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Community</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Connect &amp; belong</text>
+        </g>
+        <g transform="translate(181 0)">
+          <rect width="176" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#a855f7" fill-opacity=".18"/>
+          <path d="M19 30L25 18L31 30M21 26H29" fill="none" stroke="#C49BFF" stroke-width="1.5" stroke-linecap="round"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Creativity</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Imagine &amp; make</text>
+        </g>
+        <g transform="translate(0 59)">
+          <rect width="168" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#00d2ff" fill-opacity=".15"/>
+          <path d="M25 17L19 25H24L22 31L31 22H26L28 17Z" fill="#63E5FF"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Technology</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Build what’s next</text>
+        </g>
+        <g transform="translate(181 59)">
+          <rect width="176" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#34d399" fill-opacity=".15"/>
+          <path d="M18 25Q24 17 30 25Q24 33 18 25Z" fill="none" stroke="#72E7B8" stroke-width="1.5"/>
+          <circle cx="24" cy="25" r="2.1" fill="#72E7B8"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Together</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Grow side by side</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Floating mini card -->
+    <g transform="translate(1193 354)">
+      <rect width="222" height="65" rx="17" fill="#20223C" fill-opacity=".82" stroke="#FFFFFF" stroke-opacity=".2"/>
+      <rect x="14" y="14" width="37" height="37" rx="12" fill="#fbbf24" fill-opacity=".14"/>
+      <path d="M25 33L31 22L37 33M27 30H35" fill="none" stroke="#FBD477" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="63" y="28" font-size="10.5" font-weight="700" fill="#F4F1FF">One little world</text>
+      <text x="63" y="43" font-size="9" fill="#B7BED2">Endless possibilities</text>
+      <circle cx="202" cy="14" r="3" fill="#fbbf24"/>
     </g>
   </g>
+
+  <rect x="72" y="425" width="1356" height="2" rx="1" fill="url(#brandline)" opacity=".78"/>
+  <text x="1427" y="453" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" font-weight="650" letter-spacing="2" fill="#8994B2">CONNECT  ·  CREATE  ·  GROW</text>
 </svg>
