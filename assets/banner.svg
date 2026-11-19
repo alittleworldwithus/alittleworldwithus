@@ -1,137 +1,90 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
   <title id="title">A Little World With Us</title>
-  <desc id="desc">A cinematic digital-world banner with a connected globe emblem, project identity, and all five ALW theme colors.</desc>
+  <desc id="desc">A refined midnight digital-world banner with a balanced globe emblem, clear project identity, soft feature pills, and five ALW theme colors.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#080B1C"/>
-      <stop offset=".48" stop-color="#17102F"/>
-      <stop offset="1" stop-color="#07182A"/>
+      <stop offset="0" stop-color="#090D20"/><stop offset=".52" stop-color="#17132D"/><stop offset="1" stop-color="#091B2B"/>
     </linearGradient>
-    <radialGradient id="haze" cx="24%" cy="48%" r="62%">
-      <stop offset="0" stop-color="#a855f7" stop-opacity=".24"/>
-      <stop offset=".48" stop-color="#00d2ff" stop-opacity=".07"/>
-      <stop offset="1" stop-color="#080B1C" stop-opacity="0"/>
+    <radialGradient id="haze" cx="25%" cy="50%" r="65%">
+      <stop offset="0" stop-color="#8050C8" stop-opacity=".22"/><stop offset=".52" stop-color="#00AFCF" stop-opacity=".07"/><stop offset="1" stop-color="#090D20" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff4081"/>
-      <stop offset=".25" stop-color="#a855f7"/>
-      <stop offset=".5" stop-color="#00d2ff"/>
-      <stop offset=".75" stop-color="#34d399"/>
-      <stop offset="1" stop-color="#fbbf24"/>
+      <stop offset="0" stop-color="#ff4081"/><stop offset=".25" stop-color="#a855f7"/><stop offset=".5" stop-color="#00d2ff"/><stop offset=".75" stop-color="#34d399"/><stop offset="1" stop-color="#fbbf24"/>
     </linearGradient>
     <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#a855f7" stop-opacity=".22"/>
-      <stop offset=".52" stop-color="#101d3a" stop-opacity=".9"/>
-      <stop offset="1" stop-color="#00d2ff" stop-opacity=".16"/>
+      <stop offset="0" stop-color="#7950B5" stop-opacity=".25"/><stop offset=".55" stop-color="#111C38" stop-opacity=".96"/><stop offset="1" stop-color="#00BBD8" stop-opacity=".18"/>
     </linearGradient>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" fill="none" stroke="#8090C8" stroke-width=".7" opacity=".13"/>
-    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#8492C5" stroke-width=".7" opacity=".11"/></pattern>
   </defs>
 
   <rect width="1500" height="500" fill="url(#bg)"/>
   <rect width="1500" height="500" fill="url(#haze)"/>
   <rect width="1500" height="500" fill="url(#grid)"/>
-  <path d="M0 90H1500M0 410H1500" stroke="#8290C0" stroke-width="1" opacity=".12"/>
-  <path d="M0 24H1500M0 476H1500" stroke="url(#spectrum)" stroke-width="2.5" opacity=".8"/>
+  <path d="M0 82H1500M0 418H1500" stroke="#8793BD" stroke-width="1" opacity=".10"/>
+  <path d="M0 22H1500M0 478H1500" stroke="url(#spectrum)" stroke-width="2.2" opacity=".78"/>
 
-  <!-- Connected world emblem -->
-  <g transform="translate(205 250)">
-    <circle r="150" fill="#a855f7" opacity=".08" filter="url(#glow)"/>
-    <circle r="130" fill="#0A1027" stroke="url(#spectrum)" stroke-width="2.5" opacity=".95"/>
-    <circle r="116" fill="url(#orb)" stroke="#9AA8D8" stroke-opacity=".34" stroke-width="1.2"/>
-    <ellipse rx="83" ry="116" fill="none" stroke="#8EA0D8" stroke-width="1.4" opacity=".55"/>
-    <ellipse rx="42" ry="116" fill="none" stroke="#8EA0D8" stroke-width="1.1" opacity=".36"/>
-    <ellipse rx="116" ry="42" fill="none" stroke="#8EA0D8" stroke-width="1.1" opacity=".42"/>
-    <ellipse rx="116" ry="78" fill="none" stroke="#8EA0D8" stroke-width="1.1" opacity=".32"/>
-    <path d="M-112 -28 Q0 -82 112 -28M-112 28Q0 82 112 28" fill="none" stroke="url(#spectrum)" stroke-width="2" opacity=".68"/>
-    <path d="M-88 0C-50 -58 18 -58 72 -8S88 52 35 67-44 46-66 9" fill="none" stroke="url(#spectrum)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
-    <g fill="#fff">
-      <circle cx="-66" cy="9" r="5" />
-      <circle cx="72" cy="-8" r="5"/>
-      <circle cx="35" cy="67" r="4"/>
-    </g>
-    <g stroke-width="2" fill="#10152E">
-      <circle cx="-66" cy="9" r="9" stroke="#ff4081"/>
-      <circle cx="72" cy="-8" r="9" stroke="#00d2ff"/>
-      <circle cx="35" cy="67" r="9" stroke="#34d399"/>
-    </g>
-    <text x="0" y="12" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="3" fill="#fff">ALW</text>
-    <path d="M-26 29H26" stroke="url(#spectrum)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- World emblem -->
+  <g transform="translate(215 250)">
+    <circle r="151" fill="#9B63E8" opacity=".075" filter="url(#softGlow)"/>
+    <circle r="130" fill="#0C1229" stroke="url(#spectrum)" stroke-width="2.3"/>
+    <circle r="116" fill="url(#orb)" stroke="#AAB4DC" stroke-opacity=".32" stroke-width="1.2"/>
+    <ellipse rx="82" ry="116" fill="none" stroke="#91A2D7" stroke-width="1.3" opacity=".48"/>
+    <ellipse rx="42" ry="116" fill="none" stroke="#91A2D7" stroke-width="1.1" opacity=".32"/>
+    <ellipse rx="116" ry="42" fill="none" stroke="#91A2D7" stroke-width="1.1" opacity=".38"/>
+    <ellipse rx="116" ry="78" fill="none" stroke="#91A2D7" stroke-width="1.1" opacity=".27"/>
+    <path d="M-111 -28Q0 -80 111 -28M-111 28Q0 80 111 28" fill="none" stroke="url(#spectrum)" stroke-width="1.8" opacity=".58"/>
+    <path d="M-88 0C-50 -58 18 -58 72 -8S88 52 35 67-44 46-66 9" fill="none" stroke="url(#spectrum)" stroke-width="3.5" stroke-linecap="round" filter="url(#softGlow)"/>
+    <g fill="#11172F" stroke-width="2.2"><circle cx="-66" cy="9" r="8" stroke="#ff4081"/><circle cx="72" cy="-8" r="8" stroke="#00d2ff"/><circle cx="35" cy="67" r="8" stroke="#34d399"/></g>
+    <text x="0" y="11" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="3" fill="#FFFFFF">ALW</text>
+    <path d="M-25 29H25" stroke="url(#spectrum)" stroke-width="2.4" stroke-linecap="round"/>
   </g>
 
-  <!-- Fine connected data paths -->
-  <g fill="none" stroke-width="1.5" opacity=".58">
-    <path d="M330 150L390 105H465" stroke="#a855f7"/>
-    <path d="M335 345L395 395H470" stroke="#00d2ff"/>
-    <path d="M82 100L120 130L142 130" stroke="#ff4081"/>
-    <path d="M80 390L122 360L145 360" stroke="#34d399"/>
-    <path d="M260 72L285 48L330 48" stroke="#fbbf24"/>
+  <!-- Fine connection lines -->
+  <g fill="none" stroke-width="1.4" opacity=".48">
+    <path d="M333 150L388 112H432" stroke="#A855F7"/><path d="M334 350L390 389H432" stroke="#00D2FF"/>
+    <path d="M90 105L126 132H148" stroke="#FF4081"/><path d="M88 390L126 365H148" stroke="#34D399"/>
+    <path d="M263 73L286 51H330" stroke="#FBBF24"/>
   </g>
-  <g>
-    <circle cx="465" cy="105" r="4" fill="#a855f7"/>
-    <circle cx="470" cy="395" r="4" fill="#00d2ff"/>
-    <circle cx="142" cy="130" r="4" fill="#ff4081"/>
-    <circle cx="145" cy="360" r="4" fill="#34d399"/>
-    <circle cx="330" cy="48" r="4" fill="#fbbf24"/>
-  </g>
+  <g><circle cx="432" cy="112" r="3.5" fill="#A855F7"/><circle cx="432" cy="389" r="3.5" fill="#00D2FF"/><circle cx="148" cy="132" r="3.5" fill="#FF4081"/><circle cx="148" cy="365" r="3.5" fill="#34D399"/><circle cx="330" cy="51" r="3.5" fill="#FBBF24"/></g>
 
-  <!-- Identity -->
-  <g transform="translate(455 132)" font-family="Segoe UI,Roboto,Arial,sans-serif">
-    <rect x="0" y="0" width="258" height="34" rx="17" fill="#21143C" stroke="#a855f7" stroke-width="1.4"/>
-    <circle cx="18" cy="17" r="5" fill="#ff4081"/>
-    <text x="34" y="22" font-size="12" font-weight="700" letter-spacing="2.2" fill="#E9D5FF">CONNECTED DIGITAL COMMUNITY</text>
+  <!-- Project identity -->
+  <g transform="translate(455 126)" font-family="Segoe UI,Roboto,Arial,sans-serif">
+    <rect x="0" y="0" width="270" height="34" rx="17" fill="#211A3A" stroke="#8860C5" stroke-width="1.2"/>
+    <circle cx="18" cy="17" r="4.5" fill="#FF78A6"/>
+    <text x="34" y="22" font-size="11.5" font-weight="700" letter-spacing="2" fill="#E9DDFB">CONNECTED DIGITAL COMMUNITY</text>
 
-    <text x="0" y="112" font-size="67" font-weight="850" letter-spacing="1.2" fill="#FFFFFF">A LITTLE WORLD</text>
-    <text x="0" y="181" font-size="62" font-weight="650" letter-spacing="2" fill="#E7E5F5">WITH US</text>
-    <rect x="2" y="202" width="635" height="4" rx="2" fill="url(#spectrum)" filter="url(#glow)"/>
-    <text x="2" y="246" font-size="23" font-weight="500" letter-spacing="1.1" fill="#BFC9E2">A shared space to connect, create &amp; grow together</text>
+    <text x="0" y="108" font-size="64" font-weight="850" letter-spacing=".5" fill="#FFFFFF">A LITTLE WORLD</text>
+    <text x="2" y="174" font-size="58" font-weight="650" letter-spacing="1.8" fill="#DCDDF0">WITH US</text>
+    <rect x="2" y="194" width="620" height="3.5" rx="2" fill="url(#spectrum)" opacity=".88"/>
+    <text x="2" y="235" font-size="21" font-weight="500" letter-spacing=".65" fill="#C2CBE0">A shared space to connect, create &amp; grow together</text>
 
-    <!-- Feature pills, each using one official theme color -->
-    <g transform="translate(0 282)" font-size="13" font-weight="700" letter-spacing=".7">
-      <rect x="0" y="0" width="126" height="34" rx="7" fill="#241329" stroke="#ff4081"/>
-      <circle cx="15" cy="17" r="4" fill="#ff4081"/>
-      <text x="72" y="22" fill="#FFD7E5" text-anchor="middle">COMMUNITY</text>
-
-      <rect x="139" y="0" width="126" height="34" rx="7" fill="#211638" stroke="#a855f7"/>
-      <circle cx="154" cy="17" r="4" fill="#a855f7"/>
-      <text x="211" y="22" fill="#E9D5FF" text-anchor="middle">CREATIVITY</text>
-
-      <rect x="278" y="0" width="112" height="34" rx="7" fill="#0B2638" stroke="#00d2ff"/>
-      <circle cx="293" cy="17" r="4" fill="#00d2ff"/>
-      <text x="340" y="22" fill="#CFF7FF" text-anchor="middle">TECHNOLOGY</text>
-
-      <rect x="403" y="0" width="104" height="34" rx="7" fill="#102A28" stroke="#34d399"/>
-      <circle cx="418" cy="17" r="4" fill="#34d399"/>
-      <text x="462" y="22" fill="#C9FBE8" text-anchor="middle">TOGETHER</text>
-
-      <rect x="520" y="0" width="112" height="34" rx="7" fill="#302716" stroke="#fbbf24"/>
-      <circle cx="535" cy="17" r="4" fill="#fbbf24"/>
-      <text x="584" y="22" fill="#FFF1C2" text-anchor="middle">POSSIBILITY</text>
+    <!-- Rebalanced, equal-height feature pills -->
+    <g transform="translate(0 270)" font-size="12.5" font-weight="700" letter-spacing=".55">
+      <g><rect x="0" y="0" width="126" height="38" rx="19" fill="#2A1A2B" stroke="#B94A78" stroke-width="1.1"/><circle cx="17" cy="19" r="4" fill="#FF6D9D"/><text x="75" y="23" fill="#FFE0EA" text-anchor="middle">COMMUNITY</text></g>
+      <g><rect x="137" y="0" width="126" height="38" rx="19" fill="#281E3A" stroke="#8C60C6" stroke-width="1.1"/><circle cx="154" cy="19" r="4" fill="#B77AFB"/><text x="212" y="23" fill="#EDE0FF" text-anchor="middle">CREATIVITY</text></g>
+      <g><rect x="274" y="0" width="120" height="38" rx="19" fill="#142A39" stroke="#258EAA" stroke-width="1.1"/><circle cx="291" cy="19" r="4" fill="#42D9F5"/><text x="339" y="23" fill="#D9F8FF" text-anchor="middle">TECHNOLOGY</text></g>
+      <g><rect x="405" y="0" width="108" height="38" rx="19" fill="#172D2C" stroke="#329C7B" stroke-width="1.1"/><circle cx="422" cy="19" r="4" fill="#55DDAA"/><text x="469" y="23" fill="#D8F9EA" text-anchor="middle">TOGETHER</text></g>
+      <g><rect x="524" y="0" width="116" height="38" rx="19" fill="#30291D" stroke="#B68C36" stroke-width="1.1"/><circle cx="541" cy="19" r="4" fill="#FFD064"/><text x="587" y="23" fill="#FFF1CC" text-anchor="middle">POSSIBILITY</text></g>
     </g>
   </g>
 
-  <!-- Right-side network constellation -->
-  <g transform="translate(1225 245)" opacity=".78">
-    <path d="M-65 -105L40 -70L90 10L22 95L-75 55Z M-65 -105L22 95 M40 -70L-75 55 M90 10L-65 -105" fill="none" stroke="#8094C9" stroke-width="1.4" stroke-dasharray="5 7" opacity=".48"/>
-    <circle cx="-65" cy="-105" r="19" fill="#17152F" stroke="#ff4081" stroke-width="2"/>
-    <circle cx="40" cy="-70" r="25" fill="#17152F" stroke="#a855f7" stroke-width="2.5"/>
-    <circle cx="90" cy="10" r="16" fill="#17152F" stroke="#00d2ff" stroke-width="2"/>
-    <circle cx="22" cy="95" r="22" fill="#17152F" stroke="#34d399" stroke-width="2.5"/>
-    <circle cx="-75" cy="55" r="14" fill="#17152F" stroke="#fbbf24" stroke-width="2"/>
-    <circle cx="40" cy="-70" r="5" fill="#a855f7"/>
-    <circle cx="22" cy="95" r="4" fill="#34d399"/>
+  <!-- Right constellation, softened and balanced -->
+  <g transform="translate(1240 245)" opacity=".72">
+    <path d="M-66 -104L39 -70L91 10L22 94L-76 55Z M-66 -104L22 94 M39 -70L-76 55 M91 10L-66 -104" fill="none" stroke="#8798C7" stroke-width="1.3" stroke-dasharray="4 8" opacity=".42"/>
+    <circle cx="-66" cy="-104" r="17" fill="#17182F" stroke="#D45A8D" stroke-width="1.8"/>
+    <circle cx="39" cy="-70" r="22" fill="#17182F" stroke="#A879E5" stroke-width="2.2"/>
+    <circle cx="91" cy="10" r="15" fill="#17182F" stroke="#38BBD5" stroke-width="1.8"/>
+    <circle cx="22" cy="94" r="19" fill="#17182F" stroke="#42B88F" stroke-width="2.1"/>
+    <circle cx="-76" cy="55" r="13" fill="#17182F" stroke="#D7AA4B" stroke-width="1.8"/>
+    <circle cx="39" cy="-70" r="4" fill="#B77AFB"/><circle cx="22" cy="94" r="3.5" fill="#55DDAA"/>
   </g>
 
-  <!-- Five-color signature rail -->
-  <g transform="translate(1065 445)">
-    <rect width="310" height="5" rx="2.5" fill="url(#spectrum)" opacity=".95"/>
-    <g font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="1.3" fill="#AAB5D1">
-      <text x="0" y="24">ROSE</text><text x="72" y="24">VIOLET</text><text x="145" y="24">CYAN</text><text x="218" y="24">MINT</text><text x="275" y="24">GOLD</text>
+  <!-- Subtle five-color signature -->
+  <g transform="translate(1080 444)">
+    <rect width="285" height="4" rx="2" fill="url(#spectrum)" opacity=".85"/>
+    <g font-family="Segoe UI,Arial,sans-serif" font-size="9.5" letter-spacing="1.15" fill="#AEB9D1">
+      <text x="0" y="22">ROSE</text><text x="66" y="22">VIOLET</text><text x="133" y="22">CYAN</text><text x="198" y="22">MINT</text><text x="255" y="22">GOLD</text>
     </g>
   </g>
 </svg>
