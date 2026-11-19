@@ -1,140 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
+  <title id="title">A Little World With Us</title>
+  <desc id="desc">A clean premium brand banner with a restrained midnight palette and translucent dashboard cards accented by the five official ALW colors.</desc>
   <defs>
-    <!-- Deep Cosmic Twilight base -->
-    <linearGradient id="alw_bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c0a1a"/>
-      <stop offset="40%" stop-color="#190e2e"/>
-      <stop offset="80%" stop-color="#241038"/>
-      <stop offset="100%" stop-color="#0d0817"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090D1C"/><stop offset=".55" stop-color="#11162B"/><stop offset="1" stop-color="#15132B"/>
     </linearGradient>
-
-    <!-- 5-Color Harmonic Aurora Gradients -->
-    <linearGradient id="aurora_mesh" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff4081" stop-opacity="0.6"/>    <!-- 1. Radiant Rose -->
-      <stop offset="25%" stop-color="#a855f7" stop-opacity="0.5"/>   <!-- 2. Lavender Violet -->
-      <stop offset="50%" stop-color="#00d2ff" stop-opacity="0.45"/>  <!-- 3. Sky Cyan -->
-      <stop offset="75%" stop-color="#34d399" stop-opacity="0.4"/>   <!-- 4. Soft Mint -->
-      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.5"/>  <!-- 5. Warm Gold -->
-    </linearGradient>
-
-    <linearGradient id="ribbon1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff4081"/>
-      <stop offset="30%" stop-color="#a855f7"/>
-      <stop offset="60%" stop-color="#00d2ff"/>
-      <stop offset="85%" stop-color="#34d399"/>
-      <stop offset="100%" stop-color="#fbbf24"/>
-    </linearGradient>
-
-    <radialGradient id="world_glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.6"/>
-      <stop offset="40%" stop-color="#ff4081" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#a855f7" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    <radialGradient id="ambient" cx="82%" cy="43%" r="65%">
+      <stop offset="0" stop-color="#7554B7" stop-opacity=".24"/><stop offset=".5" stop-color="#263B68" stop-opacity=".12"/><stop offset="1" stop-color="#090D1C" stop-opacity="0"/>
     </radialGradient>
-
-    <filter id="soft_glow"><feGaussianBlur stdDeviation="12" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="star_glow"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".085"/><stop offset="1" stop-color="#B8C6F5" stop-opacity=".035"/>
+    </linearGradient>
+    <linearGradient id="glassEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".28"/><stop offset=".55" stop-color="#B8B5E8" stop-opacity=".15"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".09"/>
+    </linearGradient>
+    <linearGradient id="brandline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff4081"/><stop offset=".25" stop-color="#a855f7"/><stop offset=".5" stop-color="#00d2ff"/><stop offset=".75" stop-color="#34d399"/><stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#B78AF4"/><stop offset="1" stop-color="#7952C6"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dy="9"/><feComponentTransfer><feFuncA type="linear" slope=".34"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="microgrid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#AAB6E2" stroke-opacity=".045" stroke-width="1"/></pattern>
   </defs>
 
-  <!-- Canvas Base -->
-  <rect width="1500" height="500" fill="url(#alw_bg)"/>
+  <rect width="1500" height="500" fill="url(#background)"/>
+  <rect width="1500" height="500" fill="url(#ambient)"/>
+  <rect width="1500" height="500" fill="url(#microgrid)"/>
+  <circle cx="1270" cy="230" r="190" fill="#8061C8" opacity=".09" filter="url(#blur)"/>
+  <path d="M72 72H1428" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <path d="M72 428H1428" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <rect x="72" y="72" width="54" height="3" rx="1.5" fill="url(#brandline)"/>
 
-  <!-- Flowing 5-Color Aurora Mesh Ribbons in Background -->
-  <path d="M -100,200 Q 300,50 700,220 T 1600,120 L 1600,500 L -100,500 Z" fill="url(#aurora_mesh)" opacity="0.35"/>
-  <path d="M -100,320 Q 400,180 850,300 T 1600,240 L 1600,500 L -100,500 Z" fill="url(#aurora_mesh)" opacity="0.45"/>
+  <!-- Brand identity -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <g transform="translate(74 118)">
+      <rect width="42" height="42" rx="13" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".17"/>
+      <path d="M10 22C10 15 15 10 22 10C29 10 33 15 33 22C33 29 28 33 21 33" fill="none" stroke="url(#brandline)" stroke-width="2.7" stroke-linecap="round"/>
+      <path d="M15 22H28M21.5 15V29" stroke="#F4F0FF" stroke-opacity=".9" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="31.5" cy="11" r="2.4" fill="#00D2FF"/>
+    </g>
+    <text x="132" y="145" fill="#C8C6DD" font-size="12" font-weight="700" letter-spacing="2.5">A L W  /  DIGITAL COMMUNITY</text>
 
-  <!-- Gentle Star Particles (Warm Gold, Rose, Cyan) -->
-  <g opacity="0.65" filter="url(#star_glow)">
-    <circle cx="280" cy="80" r="2.5" fill="#fbbf24"/>
-    <circle cx="550" cy="60" r="1.5" fill="#ff4081"/>
-    <circle cx="820" cy="95" r="2" fill="#00d2ff"/>
-    <circle cx="1120" cy="65" r="2.5" fill="#34d399"/>
-    <circle cx="1380" cy="110" r="2" fill="#fbbf24"/>
-    <circle cx="120" cy="420" r="2" fill="#ff4081"/>
-    <circle cx="950" cy="440" r="2.5" fill="#34d399"/>
-    <circle cx="1420" cy="380" r="1.5" fill="#00d2ff"/>
-  </g>
+    <text x="72" y="239" fill="#FFFFFF" font-size="57" font-weight="740" letter-spacing="-1.55">A Little World</text>
+    <text x="74" y="305" fill="#E5DFF4" font-size="55" font-weight="520" letter-spacing="-.65">With Us<span fill="#A855F7">.</span></text>
+    <rect x="74" y="332" width="76" height="3" rx="1.5" fill="url(#brandline)"/>
+    <text x="74" y="373" fill="#C2C9DA" font-size="17" font-weight="450" letter-spacing=".1">A shared space to connect, create &amp; grow.</text>
 
-  <!-- Left: The Dual-World Celestial Sphere & Orbiting Sanctuary -->
-  <g transform="translate(195, 250)">
-    <!-- Outer Glow -->
-    <circle cx="0" cy="0" r="135" fill="url(#world_glow)" filter="url(#soft_glow)"/>
-
-    <!-- 5-Color Orbital Ring 1 -->
-    <ellipse cx="0" cy="0" rx="145" ry="55" fill="none" stroke="url(#ribbon1)" stroke-width="2.5" transform="rotate(-25)" stroke-dasharray="12 4" opacity="0.85"/>
-    <!-- 5-Color Orbital Ring 2 -->
-    <ellipse cx="0" cy="0" rx="145" ry="55" fill="none" stroke="url(#ribbon1)" stroke-width="2.5" transform="rotate(35)" opacity="0.85"/>
-
-    <!-- Central Sanctuary Orb -->
-    <circle cx="0" cy="0" r="75" fill="#170c2e" stroke="url(#ribbon1)" stroke-width="3.5" filter="url(#soft_glow)"/>
-
-    <!-- Gentle Continents / Heart-World Silhouette -->
-    <path d="M -30,-15 Q -10,-45 20,-20 Q 40,0 20,25 Q -10,40 -25,20 Q -40,0 -30,-15 Z" fill="#a855f7" opacity="0.35"/>
-    <circle cx="18" cy="-22" r="7" fill="#fbbf24" filter="url(#star_glow)"/>
-    <circle cx="-15" cy="15" r="5" fill="#00d2ff" filter="url(#star_glow)"/>
-
-    <!-- Warm World Icon in Center -->
-    <text x="0" y="16" font-family="'Segoe UI Emoji', 'Segoe UI', sans-serif" font-size="44" text-anchor="middle" filter="url(#soft_glow)">🌍</text>
-  </g>
-
-  <!-- Right: 5 Pillars of Care Harmony Constellation -->
-  <g transform="translate(1120, 150)" opacity="0.85">
-    <!-- Interconnecting curved arcs -->
-    <path d="M 50,40 Q 150,0 240,50 Q 200,160 120,180 Q 40,140 50,40 Z" fill="none" stroke="url(#ribbon1)" stroke-width="2" stroke-dasharray="6 4"/>
-    
-    <!-- 5 Nodes for the 5 Pillars -->
-    <!-- 1. Memories (Rose) -->
-    <circle cx="50" cy="40" r="16" fill="#ff4081" filter="url(#star_glow)"/>
-    <text x="50" y="45" font-family="'Segoe UI Emoji', sans-serif" font-size="12" text-anchor="middle" fill="#fff">📸</text>
-    
-    <!-- 2. Care & Chat (Lavender) -->
-    <circle cx="240" cy="50" r="16" fill="#a855f7" filter="url(#star_glow)"/>
-    <text x="240" y="55" font-family="'Segoe UI Emoji', sans-serif" font-size="12" text-anchor="middle" fill="#fff">💬</text>
-
-    <!-- 3. Learning (Cyan) -->
-    <circle cx="210" cy="170" r="16" fill="#00d2ff" filter="url(#star_glow)"/>
-    <text x="210" y="175" font-family="'Segoe UI Emoji', sans-serif" font-size="12" text-anchor="middle" fill="#fff">🇰🇷</text>
-
-    <!-- 4. Wellness (Mint) -->
-    <circle cx="70" cy="160" r="16" fill="#34d399" filter="url(#star_glow)"/>
-    <text x="70" y="165" font-family="'Segoe UI Emoji', sans-serif" font-size="12" text-anchor="middle" fill="#fff">🌱</text>
-
-    <!-- 5. Future (Gold) -->
-    <circle cx="140" cy="105" r="22" fill="#fbbf24" filter="url(#star_glow)"/>
-    <text x="140" y="112" font-family="'Segoe UI Emoji', sans-serif" font-size="15" text-anchor="middle" fill="#fff">✨</text>
-  </g>
-
-  <!-- Typography & Badges -->
-  <g transform="translate(390, 155)">
-    <!-- 5-Color Harmonic Badge -->
-    <rect x="0" y="0" width="300" height="30" rx="15" fill="#201035" stroke="url(#ribbon1)" stroke-width="1.8"/>
-    <text x="150" y="20" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#fdf2f8" text-anchor="middle" letter-spacing="2">A SHARED DIGITAL SANCTUARY</text>
-
-    <!-- Main Title -->
-    <text x="0" y="85" font-family="'Segoe UI', 'Arial Rounded MT Bold', sans-serif" font-size="58" font-weight="900" fill="#ffffff" letter-spacing="3">A LITTLE WORLD WITH US</text>
-    
-    <!-- 5-Color Underline -->
-    <rect x="0" y="105" width="640" height="4" rx="2" fill="url(#ribbon1)"/>
-
-    <!-- Tagline (Warm & Meaningful) -->
-    <text x="0" y="150" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="400" fill="#fbcfe8" letter-spacing="1">Private Space for Shared Memories, Everyday Care &amp; Meaningful Moments</text>
-    
-    <!-- 5 Harmonic Sub-Pills -->
-    <g transform="translate(0, 185)" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">
-      <rect x="0" y="0" width="115" height="28" rx="14" fill="#2d1030" stroke="#ff4081" stroke-width="1.5"/>
-      <text x="57" y="18" fill="#fbcfe8" text-anchor="middle">MEMORIES</text>
-      
-      <rect x="125" y="0" width="125" height="28" rx="14" fill="#26103d" stroke="#a855f7" stroke-width="1.5"/>
-      <text x="187" y="18" fill="#e9d5ff" text-anchor="middle">INTIMATE CHAT</text>
-
-      <rect x="260" y="0" width="120" height="28" rx="14" fill="#082033" stroke="#00d2ff" stroke-width="1.5"/>
-      <text x="320" y="18" fill="#bae6fd" text-anchor="middle">DAILY CARE</text>
-
-      <rect x="390" y="0" width="135" height="28" rx="14" fill="#082b20" stroke="#34d399" stroke-width="1.5"/>
-      <text x="457" y="18" fill="#a7f3d0" text-anchor="middle">KOREAN STUDY</text>
-
-      <rect x="535" y="0" width="115" height="28" rx="14" fill="#332408" stroke="#fbbf24" stroke-width="1.5"/>
-      <text x="592" y="18" fill="#fef08a" text-anchor="middle">AI JOURNEY</text>
+    <g transform="translate(74 397)" font-size="10.5" font-weight="650" letter-spacing="1.2">
+      <circle cx="4" cy="4" r="3.2" fill="#ff4081"/><text x="16" y="8" fill="#D9D6E8">COMMUNITY</text>
+      <circle cx="133" cy="4" r="3.2" fill="#a855f7"/><text x="145" y="8" fill="#D9D6E8">CREATIVITY</text>
+      <circle cx="260" cy="4" r="3.2" fill="#00d2ff"/><text x="272" y="8" fill="#D9D6E8">TECHNOLOGY</text>
+      <circle cx="402" cy="4" r="3.2" fill="#34d399"/><text x="414" y="8" fill="#D9D6E8">TOGETHER</text>
     </g>
   </g>
+
+  <!-- Layered glass dashboard composition -->
+  <g filter="url(#shadow)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <!-- Back card -->
+    <g transform="translate(1004 108) rotate(5 174 120)">
+      <rect width="350" height="250" rx="23" fill="url(#glass)" stroke="url(#glassEdge)" stroke-width="1.2"/>
+      <rect x="22" y="22" width="104" height="7" rx="3.5" fill="#DCE3FF" opacity=".2"/>
+      <rect x="22" y="44" width="190" height="5" rx="2.5" fill="#DCE3FF" opacity=".1"/>
+      <g transform="translate(24 88)" fill="none" stroke-linecap="round">
+        <path d="M0 70L48 45L92 57L139 16L188 34L246 0" stroke="#00D2FF" stroke-opacity=".7" stroke-width="2.5"/>
+        <path d="M0 70L48 45L92 57L139 16L188 34L246 0V105H0Z" fill="#00D2FF" fill-opacity=".06" stroke="none"/>
+        <path d="M0 105H246" stroke="#DCE3FF" stroke-opacity=".13"/>
+      </g>
+    </g>
+
+    <!-- Main glass panel -->
+    <g transform="translate(835 112)">
+      <rect width="405" height="280" rx="23" fill="url(#glass)" stroke="url(#glassEdge)" stroke-width="1.3"/>
+      <path d="M1 26Q1 1 26 1H379Q404 1 404 26" fill="none" stroke="#FFFFFF" stroke-opacity=".13"/>
+      <g transform="translate(24 22)">
+        <circle cx="6" cy="6" r="4" fill="#ff4081"/>
+        <circle cx="20" cy="6" r="4" fill="#a855f7"/>
+        <circle cx="34" cy="6" r="4" fill="#00d2ff"/>
+        <rect x="274" y="0" width="82" height="17" rx="8.5" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".34"/>
+        <circle cx="286" cy="8.5" r="3" fill="#34d399"/>
+        <text x="297" y="12" font-size="8.5" font-weight="650" letter-spacing=".7" fill="#B9F5DC">ONLINE</text>
+      </g>
+      <path d="M24 58H381" stroke="#FFFFFF" stroke-opacity=".1"/>
+      <text x="25" y="86" font-size="11" font-weight="650" letter-spacing="1.5" fill="#AEB9D4">YOUR WORLD, IN ONE PLACE</text>
+      <text x="25" y="116" font-size="21" font-weight="700" fill="#F5F4FF">Explore together</text>
+      <text x="25" y="137" font-size="10.5" fill="#AEB8D1">Ideas, people and possibilities.</text>
+
+      <!-- Four dashboard tiles -->
+      <g transform="translate(24 158)">
+        <g>
+          <rect width="168" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#ff4081" fill-opacity=".16"/>
+          <circle cx="24.5" cy="24.5" r="5" fill="none" stroke="#FF79A7" stroke-width="1.5"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Community</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Connect &amp; belong</text>
+        </g>
+        <g transform="translate(181 0)">
+          <rect width="176" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#a855f7" fill-opacity=".18"/>
+          <path d="M19 30L25 18L31 30M21 26H29" fill="none" stroke="#C49BFF" stroke-width="1.5" stroke-linecap="round"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Creativity</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Imagine &amp; make</text>
+        </g>
+        <g transform="translate(0 59)">
+          <rect width="168" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#00d2ff" fill-opacity=".15"/>
+          <path d="M25 17L19 25H24L22 31L31 22H26L28 17Z" fill="#63E5FF"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Technology</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Build what’s next</text>
+        </g>
+        <g transform="translate(181 59)">
+          <rect width="176" height="49" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".11"/>
+          <rect x="12" y="12" width="25" height="25" rx="8" fill="#34d399" fill-opacity=".15"/>
+          <path d="M18 25Q24 17 30 25Q24 33 18 25Z" fill="none" stroke="#72E7B8" stroke-width="1.5"/>
+          <circle cx="24" cy="25" r="2.1" fill="#72E7B8"/>
+          <text x="47" y="21" font-size="10" font-weight="650" fill="#EAE8F8">Together</text>
+          <text x="47" y="34" font-size="8.5" fill="#AEB8D1">Grow side by side</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Floating mini card -->
+    <g transform="translate(1193 354)">
+      <rect width="222" height="62" rx="16" fill="#20223C" fill-opacity=".82" stroke="#FFFFFF" stroke-opacity=".2"/>
+      <rect x="14" y="14" width="37" height="37" rx="12" fill="#fbbf24" fill-opacity=".14"/>
+      <path d="M25 33L31 22L37 33M27 30H35" fill="none" stroke="#FBD477" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="63" y="28" font-size="10.5" font-weight="700" fill="#F4F1FF">One little world</text>
+      <text x="63" y="43" font-size="9" fill="#B7BED2">Endless possibilities</text>
+      <circle cx="202" cy="14" r="3" fill="#fbbf24"/>
+    </g>
+  </g>
+
+  <rect x="72" y="425" width="1356" height="2" rx="1" fill="url(#brandline)" opacity=".78"/>
+  <text x="1427" y="453" text-anchor="end" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="9" font-weight="650" letter-spacing="2" fill="#8994B2">CONNECT  ·  CREATE  ·  GROW</text>
 </svg>
